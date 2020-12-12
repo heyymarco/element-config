@@ -1,0 +1,28 @@
+{
+  "name": "@heymarco/element-config",
+  "version": "1.0.0",
+  "description": "Defines the configurable html element class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyymarco/element-config.git"
+  },
+  "keywords": [
+    "html",
+    "element",
+    "class",
+    "config",
+    "configuration",
+    "css",
+    "var"
+  ],
+  "author": "HeyMarco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyymarco/element-config/issues"
+  },
+  "homepage": "https://github.com/heyymarco/element-config#readme"
+}
