@@ -19,7 +19,14 @@ export default class ElementConfig {
         this.deconfigure   = deconfigure || (() => {});
         this.configure     = configure || (() => {});
 
-        if (configFirst) this.configure();
+        if (configFirst) {
+            // give this constructor a brief time to return the caller
+            // so the configure/deconfigure algoritm are safe to execute.
+
+            setTimeout(() => {
+                this.configure();
+            }, 10);
+        }
     }
     
     
