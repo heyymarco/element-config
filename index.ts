@@ -16,6 +16,8 @@ export default class ElementConfig {
 
         this.deconfigure   = deconfigure || (() => {});
         this.configure     = configure || (() => {});
+
+        this.configure();
     }
     
     

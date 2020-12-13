@@ -1,6 +1,6 @@
 {
   "name": "@heymarco/element-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Defines the configurable html element class.",
   "main": "index.js",
   "scripts": {
