@@ -9,7 +9,9 @@ export default class ElementConfig {
         varPrefix   : string | null = null,
 
         deconfigure : (() => void) | null = null,
-        configure   : (() => void) | null = null
+        configure   : (() => void) | null = null,
+
+        configFirst = false
     ) {
         this._class         = className || "";
         this._varPrefix     = varPrefix || "";
@@ -17,7 +19,7 @@ export default class ElementConfig {
         this.deconfigure   = deconfigure || (() => {});
         this.configure     = configure || (() => {});
 
-        this.configure();
+        if (configFirst) this.configure();
     }
     
     
